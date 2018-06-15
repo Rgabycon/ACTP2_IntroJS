@@ -9,11 +9,42 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <img src="https://source.unsplash.com/random/300x300" alt="">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      //aqui van mis instrucciones
+      $('img').css('filter', 'grayscale(100%)');
+      $('img').css('transition','all 1s');
+    });
+    //para darle el click
+    //$('img').on("mouseover",function (evt) {
+      //console.log(evt.currentTarget);
+      //$('img').css('filter', 'grayscale(100%)');
+      //$(evt.currentTarget).css('filter', 'grayscale(0%)');
+    //});
+    $('img').click(function (evt) {
+      console.log(evt.currentTarget);
+      $('img').css('filter', 'grayscale(100%)');
+      $(evt.currentTarget).css('filter', 'grayscale(0%)');
+    });
+  </script>
+</body>
+
 </html>

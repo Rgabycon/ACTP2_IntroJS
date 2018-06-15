@@ -7,11 +7,28 @@ Tip: Investigar el evento window.onload
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <img src="https://source.unsplash.com/random/800x600" alt="">
+  <img src="https://source.unsplash.com/random/400x600" alt="">
+  <img src="https://source.unsplash.com/random/800x400" alt="">
+  <img src="https://source.unsplash.com/random/400x400" alt="">
+  <img src="https://source.unsplash.com/random/800x800" alt="">
+  <img src="https://source.unsplash.com/random/400x800" alt="">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      alert("DOM ready!");
+    });
+    $(window).on("load", function () {
+      alert("imagenes cargadas");
+    });
+  </script>
+</body>
+
 </html>
